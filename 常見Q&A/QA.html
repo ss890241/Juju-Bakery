@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Menu</title>
+	<link rel="stylesheet" href="../標籤列.css">
+	<meta name="viewport" >
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+
+</head>
+
+<body>
+	<!-- 標頭 -->
+	<div style="width: 960px; margin: auto;">
+		<img src="../素材/圖片/新LOGO.png" width="120px" style="margin-left: 50px;margin-top: 10px;" >
+		<h1 style="color:rgb(116, 94, 66); margin: -80px 195px 40px ; text-shadow:3px 3px 3px rgba(77, 36, 10, 0.452);">~~~&lt;常見Q&A&gt;~~~</h1>
+		<!-- 購物車/登入 -->
+		<div style="float: right; margin-top: -160px;margin-right: 30px;">
+			<a href=""><img src="../素材/圖片/icon/shopping-cart.png" width="30px"></a>
+			<a href=""><img src="../素材/圖片/icon/會員登錄.png" width="30px" style="margin-left: 15px;"></a>
+		</div>
+	</div>
+
+	<!-- 網頁 -->
+	<div style="width: 960px;  margin: -20px auto; ">
+		
+		<!-- 導覽列 -->
+		<div style="z-index:1;position: relative;">
+			<ul class="firstchoice" >
+				<li><a href="../首頁/首頁.html"><b>首頁</b></a></li>
+				<li><a href="../最新消息/最新消息.html"><b>最新消息</b></a></li>
+				<li><a href="../商品一覽/商品主頁.html"><b>商品一覽</b></a><span class="down">&#9660;</span>
+					<ul class="secondchoice" style="position: relative;">
+						<li style="position: relative; margin-bottom: 15px;"><a href="../商品一覽/商品_生乳捲.html">生乳捲</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="../商品一覽/商品_馬卡龍.html">馬卡龍</a>
+							<span class="rightArrow">&#9658;</span>
+							<ul class="thirdchoice">
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">覆盆莓</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">芝麻起士</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">抹茶起士</a></li>
+							</ul>
+						</li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">焦糖布丁</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">古早味蛋糕</a>
+							<span class="rightArrow">&#9658;</span>
+							<ul class="thirdchoice">
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">原味</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">烤蘋果</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">流心起士</a></li>
+							</ul>
+						</li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">乳酪蛋糕</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">檸檬磅蛋糕</a></li>
+					</ul>
+				</li>
+				<li><a href="../加購小物/加購小物.html"><b>加購小物</b></a><span class="down">&#9660;</span>
+					<ul class="secondchoice">
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">蠟燭</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">卡片</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">餐盤刀具</a></li>
+					</ul>
+				</li>
+				<li><a href="../常見Q&A/QA.html"><b>常見Q&A</b></a></li>
+				<li><a href="../留言板/留言板.html"><b>留言板</b></a></li>
+			</ul>
+		</div>
+		<br><br>
+		
+		<!-- 內容 -->
+		<div style="width: 800px; margin: 0 auto;">
+			<h3 style="text-align: left; color: rgb(75, 51, 35); font-weight: 900;">訂購</h3>
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					如何購買？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide" style="padding: 0 20px 20px 20px; display: none;">
+					將喜歡的甜點加到購物車後，在購物車頁選擇您想要的到貨日期，填寫結帳資料，完成付款後即可。訂購成功會寄發 email 和簡訊通知您。
+				</div>
+				<script>
+					function hide(){
+						if(document.getElementById('hide') .style.display=='none')
+							{document.getElementById('hide') .style.display=''}
+							else{document.getElementById('hide') .style.display='none'}}
+				</script>
+			</div>	
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide1()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					有哪些付款方式？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide1" style="padding: 0 20px 20px 20px; display: none;">
+					目前有信用卡刷卡和匯款兩種付款方式。尚未支援貨到付款。
+				</div>
+				<script>
+					function hide1(){
+						if(document.getElementById('hide1') .style.display=='none')
+							{document.getElementById('hide1') .style.display=''}
+							else{document.getElementById('hide1') .style.display='none'}}
+				</script>
+			</div>	
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide2()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					會有發票嗎？可以開統編發票嗎？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide2" style="padding: 0 20px 20px 20px; display: none;">
+					每筆訂單都會成立電子發票 email 給您。可以開立統編發票，需請在結帳資料頁填寫完整。
+				</div>
+				<script>
+					function hide2(){
+						if(document.getElementById('hide2') .style.display=='none')
+							{document.getElementById('hide2') .style.display=''}
+							else{document.getElementById('hide2') .style.display='none'}}
+				</script>
+			</div>	
+			<br>
+
+			<h3 style="text-align: left; color: rgb(75, 51, 35); font-weight: 900;">訂單內容更改</h3>
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide3()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					可以合併訂單嗎？可以更改品項嗎？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide3" style="padding: 0 20px 20px 20px; display: none;">
+					訂單成立後，系統將鎖定無法再異動品項。<br>
+					如有需要，建議可以重新下單，私訊 FB 粉絲團、或 LINE聯絡我們，幫您取消和退刷舊訂單。<br>
+					<span style="color: red;">請注意，訂單商品及日期在出貨 7 日前即無法再做取消或變更。</span>
+				</div>
+				<script>
+					function hide3(){
+						if(document.getElementById('hide3') .style.display=='none')
+							{document.getElementById('hide3') .style.display=''}
+							else{document.getElementById('hide3') .style.display='none'}}
+				</script>
+			</div>
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide4()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					可以更改收件地址或到貨日期嗎？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide4" style="padding: 0 20px 20px 20px; display: none;">
+					可以喔！請最晚在出貨前7日聯絡我們更改。
+				</div>
+				<script>
+					function hide4(){
+						if(document.getElementById('hide4') .style.display=='none')
+							{document.getElementById('hide4') .style.display=''}
+							else{document.getElementById('hide4') .style.display='none'}}
+				</script>
+			</div>
+			<br>
+
+			<h3 style="text-align: left; color: rgb(75, 51, 35); font-weight: 900;">運費與取貨配送</h3>
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide6()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					有哪些配送方式？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide6" style="padding: 0 20px 20px 20px; display: none;">
+					分別有：低溫宅配、快遞、自取。請於結帳頁面選取配送方式。
+				</div>
+				<script>
+					function hide6(){
+						if(document.getElementById('hide6') .style.display=='none')
+							{document.getElementById('hide6') .style.display=''}
+							else{document.getElementById('hide6') .style.display='none'}}
+				</script>
+			</div>
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide7()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					運費如何計算？請問滿多少會有免運呢？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide7" style="padding: 0 20px 20px 20px; display: none;">
+					低溫宅配單筆運費160 元，滿 2500 元免運。快遞運費依送達地址計算。自取免運。<br>
+					經常有免運活動，詳情請至「最新消息」觀看。
+				</div>
+				<script>
+					function hide7(){
+						if(document.getElementById('hide7') .style.display=='none')
+							{document.getElementById('hide7') .style.display=''}
+							else{document.getElementById('hide7') .style.display='none'}}
+				</script>
+			</div>
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide8()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					今天下單有辦法明天送達嗎？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide8" style="padding: 0 20px 20px 20px; display: none;">
+					目前所有品項都是訂購後才通知店家備料製作，需要準備時間，所以無法隔日送達。<br>
+					結帳頁可選擇的日期為最近日期，敬請見諒！
+				</div>
+				<script>
+					function hide8(){
+						if(document.getElementById('hide8') .style.display=='none')
+							{document.getElementById('hide8') .style.display=''}
+							else{document.getElementById('hide8') .style.display='none'}}
+				</script>
+			</div>
+			<div style="margin-bottom: -10px;">
+				<p onclick="hide9()" type="button" style="width: 800px; background-color: rgb(223, 206, 177);padding-left: 20px; line-height: 50px;font-size:large; font-weight: bolder;">
+					一次訂的所有的品項都可以一起出貨嗎？
+				<span type="button" style="font-size:xx-large; float: right;margin-top: -9px;margin-right: 20px;">+</span>
+				</p>
+				<div id="hide9" style="padding: 0 20px 20px 20px; display: none;">
+					單筆訂單內的商品，會一起出貨給您。如有臨時缺貨時，我們會主動聯繫您。
+				</div>
+				<script>
+					function hide9(){
+						if(document.getElementById('hide9') .style.display=='none')
+							{document.getElementById('hide9') .style.display=''}
+							else{document.getElementById('hide9') .style.display='none'}}
+				</script>
+			</div>
+		</div>
+
+		<!-- 頁尾 -->
+		<div>
+			<hr style=" border:none; border-bottom:2px dashed rgba(83, 64, 38, 0.493) ;">
+			<p id="footer" style="margin: 0 auto 0;">聯絡我： &emsp; Juju bakery &emsp; 02-12345678</p>
+			<div style="margin: 0 auto; width: 120px; padding-bottom: 0; padding-top: 0;">
+				<a href=""><img src="../素材/圖片/icon/line.png" alt="" width="37px"></a>
+				<a href=""><img src="../素材/圖片/icon/fb.png" alt="" width="30px" style="margin: 2px 7px 4px 5px;"></a>
+				<a href=""><img src="../素材/圖片/icon/ig.png" alt="" width="32px" ></a>
+			</div>
+		</div>
+		
+    </div>
+
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/popper.min.js"></script>    
+	<script src="../bootstrap/js/bootstrap.min.js" ></script> 
+</body>
+
+</html>

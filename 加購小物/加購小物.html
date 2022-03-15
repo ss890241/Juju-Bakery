@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Menu</title>
+	<link rel="stylesheet" href="../標籤列.css">
+	<meta name="viewport" >
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+
+</head>
+
+<body>
+	<!-- 標頭 -->
+	<div style="width: 960px; margin: auto;">
+		<img src="../素材/圖片/新LOGO.png" width="120px" style="margin-left: 50px;margin-top: 10px;" >
+		<h1 style="color:rgb(116, 94, 66); margin: -80px 195px 40px ; text-shadow:3px 3px 3px rgba(77, 36, 10, 0.452);">~~~&lt;加購小物&gt;~~~</h1>
+		<!-- 購物車/登入 -->
+		<div style="float: right; margin-top: -160px;margin-right: 30px;">
+			<a href=""><img src="../素材/圖片/icon/shopping-cart.png" width="30px"></a>
+			<a href=""><img src="../素材/圖片/icon/會員登錄.png" width="30px" style="margin-left: 15px;"></a>
+		</div>
+	</div>
+
+	<!-- 網頁 -->
+	<div style="width: 960px;  margin: -20px auto; ">
+		
+		<!-- 導覽列 -->
+		<div style="z-index:1;position: relative;">
+			<ul class="firstchoice" >
+				<li><a href="../首頁/首頁.html"><b>首頁</b></a></li>
+				<li><a href="../最新消息/最新消息.html"><b>最新消息</b></a></li>
+				<li><a href="../商品一覽/商品主頁.html"><b>商品一覽</b></a><span class="down">&#9660;</span>
+					<ul class="secondchoice" style="position: relative;">
+						<li style="position: relative; margin-bottom: 15px;"><a href="../商品一覽/商品_生乳捲.html">生乳捲</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="../商品一覽/商品_馬卡龍.html">馬卡龍</a>
+							<span class="rightArrow">&#9658;</span>
+							<ul class="thirdchoice">
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">覆盆莓</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">芝麻起士</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">抹茶起士</a></li>
+							</ul>
+						</li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">焦糖布丁</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">古早味蛋糕</a>
+							<span class="rightArrow">&#9658;</span>
+							<ul class="thirdchoice">
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">原味</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">烤蘋果</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">流心起士</a></li>
+							</ul>
+						</li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">乳酪蛋糕</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">檸檬磅蛋糕</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><b>加購小物</b></a><span class="down">&#9660;</span>
+					<ul class="secondchoice">
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">蠟燭</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">卡片</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">餐盤刀具</a></li>
+					</ul>
+				</li>
+				<li><a href="../常見Q&A/QA.html"><b>常見Q&A</b></a></li>
+				<li><a href="../留言板/留言板.html"><b>留言板</b></a></li>
+			</ul>
+		</div>
+		<br><br>
+		
+		<!-- 商品卡片 -->
+		<div class="container" style="width: 940px;"> 
+			<!-- 先定義橫列，再切出直欄 -->
+			<div class="row">	
+				<div class="col">
+					<div class="card h-100"> <!--h-100設定高度-->
+					<img class="img-fluid" src="../素材/圖片/蠟燭.JPG"/>
+						<div class="card-header">
+							<h4 style="display: inline;">數字蠟燭</h4>
+						</div>
+						<div class="card-body">
+							<p class="card-text">點點數字蠟燭，可愛又有趣。</p>
+						</div>
+						<div class="card-footer" style="padding: 5px;">
+							<p style="display: inline-flex;margin: 10px auto 0 15px ; padding: 0;color: rgb(134, 87, 72); font-size:large;">$100/組(10根)</p>
+							<a href="#" class="btn btn-outline-primary float-right"style="margin:5px 5px;" >購買</a>
+						</div>
+					</div>
+	
+				</div>			
+
+				<div class="col">
+					<div class="card h-100"> <!--h-100設定高度-->
+					<img class="img-fluid" src="../素材/圖片/盤子.JPG" />
+						<div class="card-header">
+							<h4 style="display: inline;">紙盤 叉子</h4>
+						</div>
+						<div class="card-body">
+							<p class="card-text">設計感十足的花瓣紙盤，配上馬卡龍色的叉子。</p>
+						</div>
+						<div class="card-footer" style="padding: 5px;">
+							<p style="display: inline-flex;margin: 10px auto 0 15px ; padding: 0;color: rgb(134, 87, 72); font-size:large;">$60/包(6組)</p>
+							<a href="#" class="btn btn-outline-primary float-right" style="margin:5px 5px;" >購買</a>
+						</div>
+					</div>
+	
+				</div>
+
+				<div class="col">
+					<div class="card h-80"> <!--h-100設定高度-->
+					<img class="img-fluid" src="../素材/圖片/卡片.JPG" />
+						<div class="card-header">
+							<h4 style="display: inline;">萬用卡片</h4>
+						</div>
+						<div class="card-body">
+							<p class="card-text">送禮時將滿滿的心意寫在卡片上，萬用卡片超萬用。</p>
+						</div>
+						<div class="card-footer" style="padding: 5px;">
+							<p style="display: inline-flex;margin: 10px auto 0 15px ; padding: 0;color: rgb(134, 87, 72); font-size:large;">$35/張</p>
+							<a href="#" class="btn btn-outline-primary float-right" style="margin:5px 5px;" >購買</a>
+						</div>
+					</div>
+	
+				</div>
+			</div> <br>
+	
+		</div>
+
+		<!-- 頁尾 -->
+		<div>
+			<hr style=" border:none; border-bottom:2px dashed rgba(83, 64, 38, 0.493) ;">
+			<p id="footer" style="margin: 0 auto 0;">聯絡我： &emsp; Juju bakery &emsp; 02-12345678</p>
+			<div style="margin: 0 auto; width: 120px; padding-bottom: 0; padding-top: 0;">
+				<a href=""><img src="../素材/圖片/icon/line.png" alt="" width="37px"></a>
+				<a href=""><img src="../素材/圖片/icon/fb.png" alt="" width="30px" style="margin: 2px 7px 4px 5px;"></a>
+				<a href=""><img src="../素材/圖片/icon/ig.png" alt="" width="32px" ></a>
+			</div>
+		</div>
+		
+    </div>
+            
+    
+
+
+
+	
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/popper.min.js"></script>    
+	<script src="../bootstrap/js/bootstrap.min.js" ></script> 
+</body>
+
+</html>

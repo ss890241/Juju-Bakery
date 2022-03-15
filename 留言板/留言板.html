@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Menu</title>
+	<link rel="stylesheet" href="../標籤列.css">
+	<meta name="viewport" >
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+
+</head>
+
+<body>
+	<!-- 標頭 -->
+	<div style="width: 960px; margin: auto;">
+		<img src="../素材/圖片/新LOGO.png" width="120px" style="margin-left: 50px;margin-top: 10px;" >
+		<h1 style="color:rgb(116, 94, 66); margin: -80px 195px 40px ; text-shadow:3px 3px 3px rgba(77, 36, 10, 0.452);">~~~&lt;留言板&gt;~~~</h1>
+		<!-- 購物車/登入 -->
+		<div style="float: right; margin-top: -160px;margin-right: 30px;">
+			<a href=""><img src="../素材/圖片/icon/shopping-cart.png" width="30px"></a>
+			<a href=""><img src="../素材/圖片/icon/會員登錄.png" width="30px" style="margin-left: 15px;"></a>
+		</div>
+	</div>
+
+	<!-- 網頁 -->
+	<div style="width: 960px;  margin: -20px auto; ">
+		
+		<!-- 導覽列 -->
+		<div style="z-index:1;position: relative;">
+			<ul class="firstchoice" >
+				<li><a href="../首頁/首頁.html"><b>首頁</b></a></li>
+				<li><a href="../最新消息/最新消息.html"><b>最新消息</b></a></li>
+				<li><a href="../商品一覽/商品主頁.html"><b>商品一覽</b></a><span class="down">&#9660;</span>
+					<ul class="secondchoice" style="position: relative;">
+						<li style="position: relative; margin-bottom: 15px;"><a href="../商品一覽/商品_生乳捲.html">生乳捲</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="../商品一覽/商品_馬卡龍.html">馬卡龍</a>
+							<span class="rightArrow">&#9658;</span>
+							<ul class="thirdchoice">
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">覆盆莓</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">芝麻起士</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">抹茶起士</a></li>
+							</ul>
+						</li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">焦糖布丁</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">古早味蛋糕</a>
+							<span class="rightArrow">&#9658;</span>
+							<ul class="thirdchoice">
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">原味</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">烤蘋果</a></li>
+								<li style="position: relative; margin-bottom: 15px;"><a href="#">流心起士</a></li>
+							</ul>
+						</li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">乳酪蛋糕</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">檸檬磅蛋糕</a></li>
+					</ul>
+				</li>
+				<li><a href="../加購小物/加購小物.html"><b>加購小物</b></a><span class="down">&#9660;</span>
+					<ul class="secondchoice">
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">蠟燭</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">卡片</a></li>
+						<li style="position: relative; margin-bottom: 15px;"><a href="#">餐盤刀具</a></li>
+					</ul>
+				</li>
+				<li><a href="../常見Q&A/QA.html"><b>常見Q&A</b></a></li>
+				<li><a href="../留言板/留言板.html"><b>留言板</b></a></li>
+			</ul>
+		</div>
+		
+		<!-- 輸入區塊 -->
+		<div>
+			<div style="padding: 50px 170px; margin: auto;">
+				<img src="../素材/圖片/icon/fork.png" style="width: 20px;float: left;margin-top: 20px;">
+				<h4 style="display: inline;float: left;margin-top: 20px; margin-left: 10px;">標題：</h4>
+				<input type="text" id="title" style="width: 500px;display: inline; margin-top: 20px;">
+				<br><br>
+				<img src="../素材/圖片/icon/fork.png" style="width: 20px;float: left;margin-top: 60px;">
+				<h4 style="display: inline; float: left;margin-top: 60px;margin-left: 10px;">內容：</h4>
+				<textarea id="content" rows="6" style="width: 500px; display: inline;margin-top: 10px;"></textarea>
+				<br><br>
+				<button id="btn" style="float: right; background-color: rgba(221, 185, 153, 0.425);padding: 4px; border-radius: 3px; font-size: 15px;">分享</button>
+			</div>
+		</div>
+
+		<!-- 虛線下回覆區塊 -->
+		<hr style=" border:none; border-top: 3px dashed rgba(83, 64, 38, 0.493) ; width:650px; margin:0 auto;">
+		<div id="list"> </div>
+		<div class="article"></div>
+		<div style=" width: 600px; margin: auto;padding: 10px 30px 0px 20px; border: 3px solid rgba(129, 89, 37, 0.123); border-radius: 10px; margin-top: 25px;">
+			<h3>生乳捲有驚豔到~</h3>
+			<p> 生乳捲給100個讚，裡面內餡也太好吃了吧~
+				<br>蛋糕體不會很乾反而很Q彈！
+			</p>
+			<h6 style=" text-align:right; font-weight:300;">發布日期：2021/12/5</h6>
+		</div>
+		<div style=" width: 600px; margin: auto;padding: 10px 30px 0px 20px; border: 3px solid rgba(129, 89, 37, 0.123); border-radius: 10px; margin-top: 25px;">
+			<h3>馬卡龍便宜又好吃</h3>
+			<p> 今天三種口味各買了一盒，超快就出貨了，重點是很便宜，但吃起來跟專櫃賣的一樣。
+				<br>殼外面超脆，裡面QQ的，不會很死甜，我爸媽也很愛。
+			</p>
+			<h6 style=" text-align:right; font-weight:300;">發布日期：2021/12/3</h6>
+		</div>
+		<div style=" width: 600px; margin: auto;padding: 10px 30px 0px 20px; border: 3px solid rgba(129, 89, 37, 0.123); border-radius: 10px; margin-top: 25px;">
+			<h3>沙發！</h3>
+			<p> 害羞，第一個留言，但很好吃~不推不行！
+			</p>
+			<h6 style=" text-align:right; font-weight:300;">發布日期：2021/12/2</h6>
+		</div>
+
+
+		<!-- 頁尾 -->
+		<div>
+			<hr style=" border:none; border-bottom:2px dashed rgba(83, 64, 38, 0.493) ;">
+			<p id="footer" style="margin: 0 auto 0;">聯絡我： &emsp; Juju bakery &emsp; 02-12345678</p>
+			<div style="margin: 0 auto; width: 120px; padding-bottom: 0; padding-top: 0;">
+				<a href=""><img src="../素材/圖片/icon/line.png" alt="" width="37px"></a>
+				<a href=""><img src="../素材/圖片/icon/fb.png" alt="" width="30px" style="margin: 2px 7px 4px 5px;"></a>
+				<a href=""><img src="../素材/圖片/icon/ig.png" alt="" width="32px" ></a>
+			</div>
+		</div>
+
+    </div>
+	
+	<script src="留言板.js"></script>
+	<script src="../bootstrap/js/jquery.min.js"></script>
+	<script src="../bootstrap/js/popper.min.js"></script>    
+	<script src="../bootstrap/js/bootstrap.min.js" ></script> 
+</body>
+
+</html>
